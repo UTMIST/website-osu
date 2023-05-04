@@ -9,6 +9,7 @@ import {
     Icon,
     IconButton,
     Image,
+    Link,
     Popover,
     PopoverContent,
     PopoverTrigger,
@@ -20,7 +21,8 @@ import {
 import {ChevronDownIcon, ChevronRightIcon, CloseIcon, HamburgerIcon,} from '@chakra-ui/icons';
 import logo from '../img/logo.png'
 import {useEffect, useState} from "react";
-import {Link} from 'react-router-dom';
+import {Link as RouterLink} from 'react-router-dom';
+import React from 'react';
 
 const Navbar = () => {
     const {isOpen, onToggle} = useDisclosure();
@@ -42,7 +44,7 @@ const Navbar = () => {
 
     const backgroundColor = navbarTransparent
         ? 'rgba(0, 0, 0, 0)'
-        : 'rgba(10, 10, 10, 0.95)'
+        : 'rgba(10, 10, 10, 0.75)'
 
     const borderColor = 'rgba(0, 0, 0, 0)';
 
@@ -78,6 +80,7 @@ const Navbar = () => {
                 <Flex flex={{base: 1}} justify={{base: 'center', md: 'start'}} display={{base: 'none', md: 'flex'}}
                       style={{marginLeft: '50px', marginRight: '50px'}}>
                     <Link
+                        as={RouterLink}
                         to='/'
                         fontFamily={'heading'}
                         color={textColor}>
@@ -138,6 +141,7 @@ const DesktopNav = ({navbarDocked}: { navbarDocked: boolean }) => {
                     <Popover trigger={'hover'} placement={'bottom-start'}>
                         <PopoverTrigger>
                             <Link
+                                as={RouterLink}
                                 p={2}
                                 to={navItem.href ?? '#'}
                                 fontSize={'sm'}
@@ -176,7 +180,8 @@ const DesktopNav = ({navbarDocked}: { navbarDocked: boolean }) => {
 const DesktopSubNav = ({label, href, subLabel}: NavItem) => {
     return (
         <Link
-            to={href}
+            as={RouterLink}
+            to={href || ''}
             role={'group'}
             display={'block'}
             p={2}
@@ -262,7 +267,12 @@ const MobileNavItem = ({navItem, toggleParent}: { navItem: NavItem, toggleParent
                     align={'start'}>
                     {children &&
                         children.map((child) => (
-                            <Link key={child.label} py={2} to={child.href}>
+                            <Link
+                                key={child.label}
+                                as={RouterLink}
+                                py={2}
+                                to={child.href || ''}
+                            >
                                 {child.label}
                             </Link>
                         ))}
