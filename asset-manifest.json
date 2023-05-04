@@ -1,7 +1,8 @@
 {
   "files": {
     "main.css": "/static/css/main.5368f6fb.css",
-    "main.js": "/static/js/main.61c4c10a.js",
+    "main.js": "/static/js/main.970e05ae.js",
+    "static/media/triangle-bg.svg": "/static/media/triangle-bg.e1d3b4aa3cd5728f122251eaa0f0ff61.svg",
     "static/media/open-sans-all-700-normal.woff": "/static/media/open-sans-all-700-normal.105e43091a26bbed22fe.woff",
     "static/media/raleway-all-400-normal.woff": "/static/media/raleway-all-400-normal.98e7ff86f2b9a46e19cc.woff",
     "static/media/logo.png": "/static/media/logo.682b5eb8239969ab729b.png",
@@ -20,10 +21,10 @@
     "static/media/open-sans-greek-ext-700-normal.woff2": "/static/media/open-sans-greek-ext-700-normal.8850c90c4b61e6472307.woff2",
     "index.html": "/index.html",
     "main.5368f6fb.css.map": "/static/css/main.5368f6fb.css.map",
-    "main.61c4c10a.js.map": "/static/js/main.61c4c10a.js.map"
+    "main.970e05ae.js.map": "/static/js/main.970e05ae.js.map"
   },
   "entrypoints": [
     "static/css/main.5368f6fb.css",
-    "static/js/main.61c4c10a.js"
+    "static/js/main.970e05ae.js"
   ]
 }
