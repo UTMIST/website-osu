@@ -3,8 +3,8 @@ import {extendTheme, StyleFunctionProps} from '@chakra-ui/react';
 const theme = extendTheme({
     fonts: {
         // just placeholders for the actual fonts we'll be using
-        heading: `'Open Sans', sans-serif`,
-        body: `'Raleway', sans-serif`,
+        heading: `'Torus-Bold', sans-serif`,
+        body: `'Torus', sans-serif`,
     },
     colors: {
         'button': '#4132F0',

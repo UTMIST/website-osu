@@ -1,5 +1,6 @@
 import * as React from 'react';
 import {ChakraProvider} from '@chakra-ui/react';
+import Fonts from '../fonts'
 import theme from '../config/theme';
 import '../style/override.css';
 import '@fontsource/raleway/400.css';
@@ -13,6 +14,7 @@ import {BrowserRouter as Router, Route, Routes} from 'react-router-dom';
 const App = () => {
     return (
         <ChakraProvider theme={theme}>
+            <Fonts />
             <Router>
                 <Routes>
                     <Route path="/" element={<MainPage/>}/>
