@@ -27,6 +27,7 @@ const Component = () => (
                     _active={{
                         bg: 'button_pressed',
                     }}
+                    color={'whiteAlpha.900'}
                     onClick={() => alert("your aloe needs more water")}>
                     Run Demo
                 </Button>

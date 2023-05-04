@@ -7,7 +7,7 @@ import Team from "../sections/Team";
 
 const Component = () => {
     return (
-        <Page>
+        <Page bgGradient={'linear-gradient(to bottom, rgba(103, 178, 221, 1), rgba(100, 188, 211, 0))'}>
             <Team/>
         </Page>
     );

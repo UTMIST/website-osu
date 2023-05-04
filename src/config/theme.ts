@@ -7,9 +7,9 @@ const theme = extendTheme({
         body: `'Torus', sans-serif`,
     },
     colors: {
-        'button': '#4132F0',
-        'button_hover': '#5132F0',
-        'button_pressed': '#3132F0'
+        'button': 'rgb(82, 59, 166)',
+        'button_hover': 'rgb(128, 99, 238)',
+        'button_pressed': 'rgb(82, 59, 166)'
     },
     components: {},
     styles: {

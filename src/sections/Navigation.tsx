@@ -291,7 +291,7 @@ interface NavItem {
 
 const NAV_ITEMS: Array<NavItem> = [
     {
-        label: 'About Us',
+        label: 'Home',
         href: '/'
     },
     {

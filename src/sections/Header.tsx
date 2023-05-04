@@ -45,8 +45,9 @@ const Component = () => (
                     _active={{
                         bg: 'button_pressed',
                     }}
-                    onClick={() => alert("CS > EngSci")}>
-                    Grow some Aloe
+                    color={'whiteAlpha.900'}
+                    onClick={() => alert("osu! <3")}>
+                    Check it out
                 </Button>
             </Stack>
         </Stack>

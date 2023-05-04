@@ -8,7 +8,12 @@ import ScrollToTop from "./ScrollToTop";
 import { ReactComponent as TriangleBg } from '../img/triangle-bg.svg'
 import { Box } from '@chakra-ui/react';
 
-const Component = ({children}: { children: any }) => {
+interface PageProps {
+    bgGradient?: string,
+    children: any
+}
+
+const Page = ({ bgGradient, children}: PageProps) => {
     return (
         <>
             <Navigation/>
@@ -22,7 +27,7 @@ const Component = ({children}: { children: any }) => {
                 >
                     <Box
                         transform="translateY(-220px)"
-                        bg='linear-gradient(to bottom, rgba(169,208,113,1),rgba(136,173,215,0))'
+                        bg={bgGradient}
                     >
                         <TriangleBg />
                     </Box>
@@ -43,4 +48,4 @@ const Component = ({children}: { children: any }) => {
     );
 };
 
-export default Component;
+export default Page;

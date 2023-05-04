@@ -7,7 +7,7 @@ import Design from "../sections/Design";
 
 const Component = () => {
     return (
-        <Page>
+        <Page bgGradient={'linear-gradient(to bottom, rgba(169,208,113,1),rgba(136,173,215,0))'}>
             <Design/>
         </Page>
     );

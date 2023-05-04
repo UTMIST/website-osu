@@ -8,7 +8,7 @@ import Page from "../components/Page";
 
 const Component = () => {
     return (
-        <Page>
+        <Page bgGradient={'linear-gradient(to bottom, rgb(255, 140, 192),rgba(239, 132, 181,0))'}>
             <Header/>
             <AboutUs/>
         </Page>
