@@ -14,7 +14,7 @@ const Component = () => (
                 color={'white'}
                 fontSize={{base: '8xl'}}
                 style={{marginTop: '0px'}}>
-                AloeML
+                Osu! AI Mapper
             </Heading>
 
             <Center>
@@ -23,10 +23,9 @@ const Component = () => (
 
             <Heading
                 color={'white'}
-                fontSize={{base: '1xl'}}
+                fontSize={{base: '2xl'}}
                 style={{marginTop: '40px'}}>
-                Leveraging Big Data&trade;, Machine Learning&trade;, and Blockchain&trade; to optimize Aloe
-                growth&trade;
+                Creating Osu! Beatmaps using Seq2Seq models
             </Heading>
             <Stack
                 style={{marginTop: "40px"}}

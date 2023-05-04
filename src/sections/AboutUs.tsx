@@ -10,23 +10,10 @@ const Component = () => (
             <Heading className="heading">About Us</Heading>
 
             <Text>
-                AloeML is a blockchain-based platform that uses machine learning and big data to optimize aloe growth.
-                It securely stores and manages data using distributed ledgers, ensuring that information is
-                tamper-proof.
+                Osu! is a popular rhythm game based on clicking circles from community-designed beatmaps. In this project, we want to build a sequence-to-sequence model that can automatically generate a beatmap from any song's audio. 
             </Text>
             <Text>
-                By combining blockchain and machine learning, AloeML analyzes data from sensors and IoT devices
-                to predict growth trends. Growers can make informed decisions and improve cultivation processes
-                to increase yields and improve crop quality.
-            </Text>
-            <Text>
-                AloeML includes tools such as automated irrigation systems and nutrient management systems to
-                provide precise care for each plant. This ensures that plants receive the optimal level of
-                nutrients and water to grow and thrive.
-            </Text>
-            <Text>
-                With AloeML, growers can optimize their cultivation processes and increase yields, crop quality, and
-                profits. Sign up for AloeML today and grow your best aloe crop yet!
+                We will have access to a dataset of all ranked beatmaps from 2007-2020 to explore a variety of state-of-the-art sequence models like Transformers or Structured State Space models. At the end of the project, we hope to submit a fully AI-generated beatmap of a new song and have it reach the ranked status.
             </Text>
         </Stack>
     </Container>

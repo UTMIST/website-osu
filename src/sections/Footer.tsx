@@ -23,7 +23,7 @@ const Footer = () => {
                     >
                         <VStack align={'left'}>
                             <Text>
-                                AloeML<br/>
+                                Osu! AI Mapper<br/>
                                 <Link
                                     href="https://utmist.gitlab.io"
                                     textDecor={'underline'}
